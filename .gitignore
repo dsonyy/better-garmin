@@ -2,13 +2,6 @@
 .DS_Store
 Thumbs.db
 
-# IDE/Editor
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-
 # Claude Code - ignore personal/local files but keep prompts and agents
 .claude/*
 !.claude/agents/
@@ -38,3 +31,4 @@ logs/
 
 # Garmin
 developer_key
+bin

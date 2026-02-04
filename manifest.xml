@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+    <iq:application entry="BetterGarminApp" id="f8c74617-66e7-4508-b5eb-390913b22386"
+        launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.4.0" name="@Strings.AppName"
+        type="watchface" version="1.0.0">
+        <iq:products>
+            <iq:product id="fr965" />
+        </iq:products>
+        <iq:permissions />
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+        <iq:barrels />
+    </iq:application>
+</iq:manifest>
