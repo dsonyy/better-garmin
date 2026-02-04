@@ -23,13 +23,36 @@ class BetterGarminView extends WatchUi.WatchFace {
             clockTime.hour,
             clockTime.min.format("%02d")
         ]);
+        var secString = clockTime.sec.format("%02d");
+
+        var mainFont = Graphics.FONT_NUMBER_THAI_HOT;
+        var secFont = Graphics.FONT_TINY;
+
+        var mainWidth = dc.getTextWidthInPixels(timeString, mainFont);
+        var mainHeight = dc.getFontHeight(mainFont);
+        var secWidth = dc.getTextWidthInPixels(secString, secFont);
+        var secHeight = dc.getFontHeight(secFont);
+
+        var totalWidth = mainWidth + secWidth;
+        var startX = (dc.getWidth() - totalWidth) / 2;
+        var centerY = dc.getHeight() / 2;
+        var mainTop = centerY - mainHeight / 2;
+        var secTop = mainTop + (mainHeight - secHeight) * 0.20;
 
         dc.drawText(
-            dc.getWidth() / 2,
-            dc.getHeight() / 2,
-            Graphics.FONT_NUMBER_THAI_HOT,
+            startX,
+            mainTop,
+            mainFont,
             timeString,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+            Graphics.TEXT_JUSTIFY_LEFT
+        );
+
+        dc.drawText(
+            startX + mainWidth,
+            secTop,
+            secFont,
+            secString,
+            Graphics.TEXT_JUSTIFY_LEFT
         );
     }
 
