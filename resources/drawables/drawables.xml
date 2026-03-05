@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher_icon.png"/>
+    <bitmap id="IconHeart" filename="icon_heart.png"/>
+    <bitmap id="IconSteps" filename="icon_steps.png"/>
+    <bitmap id="IconFloors" filename="icon_floors.png"/>
+    <bitmap id="IconActive" filename="icon_active.png"/>
+    <bitmap id="IconWeatherClear" filename="icon_weather_clear.png"/>
+    <bitmap id="IconWeatherCloudy" filename="icon_weather_cloudy.png"/>
+    <bitmap id="IconWeatherRain" filename="icon_weather_rain.png"/>
+    <bitmap id="IconWeatherSnow" filename="icon_weather_snow.png"/>
+    <bitmap id="IconWeatherThunder" filename="icon_weather_thunder.png"/>
+    <bitmap id="IconWeatherPartlyCloudy" filename="icon_weather_partly_cloudy.png"/>
 </drawables>

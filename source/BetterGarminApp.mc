@@ -13,6 +13,8 @@ class BetterGarminApp extends Application.AppBase {
     }
 
     function getInitialView() {
-        return [new BetterGarminView()];
+        var view = new BetterGarminView();
+        var delegate = new BetterGarminDelegate(view);
+        return [view, delegate];
     }
 }
